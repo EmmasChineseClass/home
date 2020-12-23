@@ -570,7 +570,7 @@ blockquote {
     position: relative;    /*when we use absolute, the parent class needs to be relative*/
     margin-top: 40px;
     color: #c18ef5;
-    /*color: #574b90;*/
+    font-weight: 350;
     text-align: justify;
 }
 
