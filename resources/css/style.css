@@ -2,6 +2,8 @@
 Orange color: #e67e22
 red color: rgba(255, 74, 74, 0.94);
 red color2: #ff7272
+gold color: #9a8979;
+dark gold color: #796c5f;
 */
 
 /*----------------------------------------*/
@@ -18,7 +20,7 @@ red color2: #ff7272
 html {
     background-color: #fff;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Gill Sans', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -47,7 +49,8 @@ html {
     line-height: 145%;
     width: 70%;
     text-align: justify;
-    color: rgb(123, 123, 123);
+    color: #9a8979;
+    /*color: rgb(123, 123, 123);*/
     margin-left: 15%;
     margin-right 15%;
 }
@@ -80,30 +83,23 @@ h6 {
 h1 {
     margin: 0;
     margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
+    padding-right: 35%;
+    color: #ffffff;
+    font-size: 320%;
     word-spacing: 4px;
+    font-family: adobe-garamond-pro, serif;
+    text-shadow: 0 1px 0 #efdbc8;
 }
 
 h2 {
-    font-size: 100%;
+    font-size: 80%;
     word-spacing: 2px;
     text-align: left;
     margin-bottom: 30px;
-    color: #fff;
+    color: rgba(154, 137, 121, 0.84);
+    font-weight: 300;
+    font-family: adobe-garamond-pro, serif;
 }
-
-/*
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-*/
 
 h3 {
     font-size: 170%;
@@ -111,6 +107,7 @@ h3 {
     text-align: center;
     margin-bottom: 5px;
     color: #ff7272;
+    font-family: adobe-garamond-pro, serif;
 }
 
 h3:after {
@@ -124,48 +121,41 @@ h3:after {
 }
 
 h4 {
-    font-size: 110%;
-    word-spacing: 2px;
-    text-align: right;
+    font-size: 100%;
+    word-spacing 2px;
+    text-align: left;
     margin-bottom: 25px;
+    color: #ff7272;
 }
 
 h5 {
-    font-size: 150%;
-    word-spacing: 5px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #c95454;
-}
-
-/*
-h5:after {
-    display: block;
-    height: 2px;
-    background-color: #2cb978;
-    content: "";
-    width: 100px;
-    margin: 30px auto -50px auto;
-}
-*/
-
-h6 {
-    font-size: 110%;
+    font-size: 170%;
     word-spacing: 2px;
     text-align: center;
-    margin-bottom: 10px;
-    color: #fdfdfd; 
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: adobe-garamond-pro, serif;
     
 }
 
+h6 {
+    font-size: 100%;
+    font-weight: 200;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+
 p {
-    color: rgb(123, 123, 123);
+    color: #9a8979;
+    
 }
 
 /* ----- PARAGRAPHS -----*/
 .intro {
-    line-height: 145%;
-    width: 70%;
+    line-height: 140%;
+    width: 55%;
     text-align: justify;
 }
 
@@ -207,22 +197,6 @@ ion-icon{
     
 }
 
-/* ----- LINKS -----*/
-a:link,
-a:visited{
-    color: #e67e22;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s;
-}
-
-a:hover,
-a:active{
-    color: #555;
-    border-bottom: 1px solid transparent;
-}
 
 /* ----- BUTTONS -----*/
 .center{
@@ -230,82 +204,74 @@ a:active{
     text-align: center;
 }
 
- /*home page sign up button*/
+
+ /*home page sign up buttons*/
 .btn:link,
-.btn:visited, 
-input[type=submit]{
+.btn:visited{
     display: inline-block;
     padding: 10px 30px;
-    font-weight: 300;
     text-decoration: none;
-    border-radius: 200px;
+    border-radius: 5px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
-    
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type=submit]{
+.btn-full:visited{
     background-color: #ff7272;
     border: 1px solid #ff7272;
-    /*
-    background-color: #005AED;
-    border: 1px solid #005AED;
-    */
     color: #fff;
     margin-right: 15px;
-}
-
-.btn:hover,
-.btn:active,
-{
-   /*background-color: rgba(0, 90, 237, 0.84);*/
-   background-color: rgba(255, 114, 114, 0.84);
+    word-spacing: px;
 }
 
 .btn-full:hover,
 .btn-full:active,
 input[type=submit]{
-    /*border: 1px solid rgba(0, 90, 237, 0.84);*/
+    border: 1px solid rgba(255, 114, 114, 0.84);
     background-color: rgba(255, 114, 114, 0.84);
 }
-
-/*about myself page contact button*/
-.btn-full-contact:link,
-.btn-full-contact:visited,
-input[type=submit]{
-    background-color: #c18ef5;
-    border: 1px solid #c18ef5;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-full-contact:hover,
-.btn-full-contact:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    border: 1px solid rgba(160, 67, 255, 0.84);
-    background-color: rgba(160, 67, 255, 0.84);
-}
-
 
 /*ghost button*/
 .btn-ghost:link,
 .btn-ghost:visited{
-    /*border: 1px solid #005AED;
-    color: #005AED;
-    */
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid #ff7272;
+    color: #ff7272;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    /*border: 1px solid #005AED;*/
     border: 1px solid #ff7272;
-    background-color: #ff7272;
+    color: #d95d5d;
+}
+
+/*about myself page contact button*/
+.btn-full-contact:link,
+.btn-full-contact:visited{
+    background-color: #9a8979;
+    border: 1px solid #9a8979;
     color: #fff;
+    margin-right: -5px;
+}
+
+.btn-full-contact:hover,
+.btn-full-contact:active{
+    border: 1px solid rgba(154, 137, 121, 0.84);
+    background-color: rgba(154, 137, 121, 0.84);
+}
+
+.btn-full-book:link,
+.btn-full-book:visited{
+    background-color: #9a8979;
+    border: 1px solid #9a8979;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-full-book:hover,
+.btn-full-book:active{
+    border: 1px solid rgba(154, 137, 121, 0.84);
+    background-color: rgba(154, 137, 121, 0.84);
 }
 
 /* Mobile Nav*/
@@ -326,13 +292,15 @@ input[type=submit]:active {
 /*----------------------------------------*/
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/poster.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/poster.png);
-    background-size: cover;
+    /*
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(img/poster.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/poster.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size: 720px 406px;
+    background-position: 100% 70%;
+    */
     height: 100vh;
-    background-attachment: fixed;
+    background-color: #f7efe7;
 }
 
 .hero-text-box {
@@ -342,11 +310,22 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 2px;
+}
+
+.poster{
+    height: 50%;
+    width: 50%;
+    float: right;
+    margin-right: 8%;
+    margin-top: 4%;
+    border-radius: 50%;
+    border-color: #ffffff;
+    
 }
 
 .logo{
-    height: 150px;
+    height: 90px;
     width: auto;
     float: left;
     margin-top: 20px;
@@ -375,10 +354,9 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 2px 0;
-    color: #fff;
+    color: #9a8979;
     text-decoration: none;
-  /*text-transform: uppercase;*/
-    font-size: 100%;
+    font-size: 80%;
     border-bottom: 2px solid transparent;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
@@ -386,7 +364,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #fff;
+    color: #796c5f;
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
@@ -408,7 +386,7 @@ header {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 13px 0;
-    color: #555;
+    color: color: #9a8979;;
     
 }
 
@@ -561,7 +539,7 @@ header {
     */
     color: #505050;
     /*background-color: #e2f3f5;*/
-    background: linear-gradient(to top, rgb(255, 205, 205), rgb(255, 255, 255));
+    background: linear-gradient(to top, #f7efe7, #ffffff);
 }
 
 blockquote {
@@ -569,9 +547,11 @@ blockquote {
     line-height: 145%;
     position: relative;    /*when we use absolute, the parent class needs to be relative*/
     margin-top: 40px;
-    color: #c18ef5;
+    color: #9a8979;
     font-weight: 350;
     text-align: justify;
+    font-size: 16px;
+    font-weight: 350;
 }
 
 blockquote:before {
@@ -580,14 +560,14 @@ blockquote:before {
     display: block;
     position: absolute;    /*when we use absolute, the parent class needs to be relative*/
     top: -5px;
-    right: 430px;
+    right: 450px;
 }
 
 .quote-box {                  /* plan-box's parent class is col span-1-of-3*/
-    background-color: rgb(255, 253, 235);
+    background-color: rgb(255, 253, 239);
     border-radius: 15px;
     padding: 10px;
-    margin: 30px;
+    margin: 20px;
     -webkit-box-shadow: 0 2px 2px rgb(250, 244, 194);
             box-shadow: 0 2px 2px rgb(250, 244, 194);
 }
@@ -670,7 +650,7 @@ cite img {
 /*----------------------------------------*/
 
 .section-form {
-    background-color: #f46767;
+    background-color: #ff7272;
 }
 
 .contact-form {
@@ -751,7 +731,6 @@ footer {
 }
 
 .social-icons li a:link,
-.social-icons li a:visited {
     font-size: 160%;
 }
 
