@@ -44,7 +44,7 @@ $(document).ready(function() {
     $('.js-wp-1').waypoint(function(direction){
         $('.js-wp-1').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '50%'  // reference top of div 
+        offset: '80%'  // reference top of div 
     });
     
     $('.js-wp-2').waypoint(function(direction){
